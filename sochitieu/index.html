@@ -1,0 +1,525 @@
+<html lang="vi">
+    <head>
+        <title>sochitieu</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="assets/css/base.css">
+        <link rel="stylesheet" href="assets/css/grid.css">
+        <link rel="stylesheet" href="assets/css/main.css">   
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <link rel="stylesheet" href="./themify-icons-font/themify-icons/themify-icons.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+       
+    </head>
+    <body>
+        <div id="app">
+            <div id="header">
+                <div class="grid wide">
+                    <div class="header_item">
+                        <ul id="item">
+                            <li class="itemhd">
+                                <div><span class="material-symbols-outlined" id="iconhome">home</span></div>
+                                <ul>
+                                    <li class="header-report">
+                                        <a href="#" class="report">
+                                            Báo Cáo
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                        </a>
+                                        <div class="list-report">
+                                            <a class="report-item" href="#">Báo cáo tháng</a>
+                                            <span></span>
+                                            <a class="report-item" href="#">Báo cáo năm</a>
+                                            <span></span>
+                                            <a class="report-item" href="fulltermreportchart.html" >Báo cáo theo danh mục</a>
+                                            <span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">Xuất dữ liệu</a>
+                                    </li>
+                                    <li class="header-info js-info">
+                                        <a href="#">Về chúng tôi</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="itemhd" id="signinup">
+                                <button id="signup" class="js-register">
+                                    Đăng ký
+                                </button>
+                                <button id="signin" class="js-login">
+                                    Đăng nhập
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="header__item-logo">
+                            <a href="#">
+                                <i class="fa-solid fa-piggy-bank"></i>
+                            </a>
+                            <div class="header__search ">
+                                <div class="header__search-input-wrap">
+                                    <input type="text" class="header__search-input" placeholder="Tìm kiếm khoản chi tiêu">
+        
+                                        <div class="header__search-history">
+                                            <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                            <div class="header__search-history-list">
+                                                <p class="header__search-history-item">
+                                                    <a href="#">Ăn trưa</a>
+                                                </p>
+                                                <p class="header__search-history-item">
+                                                    <a href="#">iphone 12</a>
+                                                </p>
+                                                <p class="header__search-history-item">
+                                                    <a href="#">iphone 13</a>
+                                                </p>
+                                                <p class="header__search-history-item">
+                                                    <a href="#">iphone 14</a>
+                                                </p>
+                                            </div>
+                                        </div>
+        
+                                </div>
+                                <button class="header__search-btn btn--bland js-noti">
+                                    <i class="header__search-btn-icon fas fa-search"></i>
+                                </button>
+                            </div>
+        
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="content">
+                <div class="grid wide">
+                    <div id="lich">
+                        <div id="nhap">
+                            <div id="option">
+                                <p id="thu">THU</p>
+                                <p id="chi">CHI</p>
+                            </div>
+                            <div id="ctent">
+                            <div id="ctentthu" class="ctenthu">
+                                <p class="datenw">
+                                    <t>Ngày</t>
+                                    <t class="nwdate">00/00/00</t>
+                                </p>
+                                <p class="note">
+                                    <t>Ghi chú</t>
+                                    <input type="text">
+                                </p>
+                                <p class="giatri">
+                                    <t>Giá trị</t>
+                                    <input  type="number" min="0">
+                                </p>
+                                <div class="danhmuc">
+                                    <t>Danh mục</t>
+                                    <div class="dsitem">
+                                        <div class="item">
+                                            <i class="fa-solid fa-money-bill-1-wave"></i>
+                                            <p>Tiền Lương</p>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-solid fa-piggy-bank"></i>
+                                            <p>Phụ Cấp</p>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-solid fa-gift"></i>
+                                            <p>Tiền Thưởng</p>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-solid fa-sack-dollar"></i>
+                                            <p>Thu nhập phụ</p>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-solid fa-coins"></i>
+                                            <p>Đầu tư</p>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-solid fa-dollar-sign"></i>
+                                            <p>Khác</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ctentchi" class="ctenchi"> 
+                                <p class="datenw">
+                                    <t>Ngày</t>
+                                    <t class="nwdate">00/00/00</t>
+                                </p>
+                                <p class="note">
+                                    <t>Ghi chú</t>
+                                    <input type="text">
+                                </p>
+                                <p class="giatri">
+                                    <t>Giá trị</t>
+                                    <input  type="number" min="0">
+                                </p>
+                                <div class="danhmuc">
+                                    <t>Danh mục</t>
+                                    <div class="dsitem">
+                                        <div class="item">
+                                            <i class="fa-solid fa-utensils"></i>
+                                            <p>Ăn uống</p>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-solid fa-car-side"></i>
+                                            <p>Đi lại</p>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-solid fa-kit-medical"></i>
+                                            <p>Y tế</p>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-solid fa-school"></i>
+                                            <p>Tiền học</p>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-solid fa-phone-volume"></i>
+                                            <p>Phí liên lạc</p>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-solid fa-bolt-lightning"></i>
+                                            <p>Tiền điện</p>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-solid fa-faucet-drip"></i>
+                                            <p>Tiền nước</p>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            <p>Mua sắm</p>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-solid fa-dollar-sign"></i>
+                                            <p>Khác</p>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div> 
+                        <div class="container">
+                            
+                            <div class="calendar">
+                                <button class="btn btn-prev">
+                                    <span><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
+                                </button>
+                                <button class="btn btn-next">
+                                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                                </button>
+                                <h1>Calendar</h1>
+                                <div class="info">
+                                    <p class="month">September</p>
+                                    <p class="year">2023</p>
+                                </div>
+                                <div class="date">
+                                    <div class="day-name">Sun</div>
+                                    <div class="day-name">Mon</div>
+                                    <div class="day-name">Tue</div>
+                                    <div class="day-name">Wen</div>
+                                    <div class="day-name">Thu</div>
+                                    <div class="day-name">Fri</div>
+                                    <div class="day-name">Sat</div>
+                                </div>
+                                <div class="date date-container" style="
+                                border-bottom-width: 0;
+                                ">
+                                    <div class="day"></div>
+                                    <div class="day"></div>
+                                    <div class="day">1</div>
+                                    <div class="day">2</div>
+                                    <div class="day">3</div>
+                                    <div class="day">4</div>
+                                    <div class="day">5</div>
+                                    <div class="day">6</div>
+                                    <div class="day">7</div>
+                                    <div class="day">8</div>
+                                    <div class="day">9</div>
+                                    <div class="day active">10</div>
+                                    <div class="day">11</div>
+                                    <div class="day">12</div>
+                                    <div class="day">13</div>
+                                    <div class="day">14</div>
+                                    <div class="day">15</div>
+                                    <div class="day">16</div>
+                                    <div class="day">17</div>
+                                    <div class="day">18</div>
+                                    <div class="day">19</div>
+                                    <div class="day">20</div>
+                                    <div class="day">21</div>
+                                    <div class="day">22</div>
+                                    <div class="day">23</div>
+                                    <div class="day">24</div>
+                                    <div class="day">25</div>
+                                    <div class="day">26</div>
+                                    <div class="day">27</div>
+                                    <div class="day">28</div>
+                                    <div class="day">29</div>
+                                    <div class="day">30</div>
+                                    <div class="day">31</div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                            
+                    </div>
+                    <div id="thongke">
+                        <div id="tthu">
+                            <div class="tde">
+                                <h3>Tổng thu</h3>
+                                <h3 class="gtri">0đ</h3>
+                            </div>
+                            <div class="chitiet">
+                                <div class="ndg">
+                                    <h4 class="dmuc">Tiền Lương</h4>
+                                    <h4 class="gia">5000000</h4>
+                                </div>
+                                <div class="ndg">
+                                    <h4 class="dmuc">Tiền Lương</h4>
+                                    <h4 class="gia">5000000</h4>
+                                </div>
+                                <div class="ndg">
+                                    <h4 class="dmuc">Tiền Lương</h4>
+                                    <h4 class="gia">5000000</h4>
+                                </div>
+                                <div class="ndg">
+                                    <h4 class="dmuc">Tiền Lương</h4>
+                                    <h4 class="gia">5000000</h4>
+                                </div>
+                                <div class="ndg">
+                                    <h4 class="dmuc">Tiền Lương</h4>
+                                    <h4 class="gia">5000000</h4>
+                                </div>
+                                <div class="ndg">
+                                    <h4 class="dmuc">Tiền Lương</h4>
+                                    <h4 class="gia">5000000</h4>
+                                </div>
+                                <div class="ndg">
+                                    <h4 class="dmuc">Tiền Lương</h4>
+                                    <h4 class="gia">5000000</h4>
+                                </div>
+                                <div class="ndg">
+                                    <h4 class="dmuc">Tiền Lương</h4>
+                                    <h4 class="gia">5000000</h4>
+                                </div>
+                                <div class="ndg">
+                                    <h4 class="dmuc">Tiền Lương</h4>
+                                    <h4 class="gia">5000000</h4>
+                                </div>
+                                <div class="ndg">
+                                    <h4 class="dmuc">Tiền Lương</h4>
+                                    <h4 class="gia">5000000</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tchi">
+                            <div class="tde">
+                                <h3>Tổng chi</h3>
+                                <h3 class="gtri">0đ</h3>
+                            </div>
+                            <div class="chitiet">
+                                <div class="ndg">
+                                    <h4 class="dmuc">Tiền ăn</h4>
+                                    <h4 class="gia">400000</h4>
+                                </div>
+                                <div class="ndg">
+                                    <h4 class="dmuc">Tiền ăn</h4>
+                                    <h4 class="gia">400000</h4>
+                                </div>
+                                <div class="ndg">
+                                    <h4 class="dmuc">Tiền ăn</h4>
+                                    <h4 class="gia">400000</h4>
+                                </div>
+                                <div class="ndg">
+                                    <h4 class="dmuc">Tiền ăn</h4>
+                                    <h4 class="gia">400000</h4>
+                                </div>
+                                <div class="ndg">
+                                    <h4 class="dmuc">Tiền ăn</h4>
+                                    <h4 class="gia">400000</h4>
+                                </div>
+                                <div class="ndg">
+                                    <h4 class="dmuc">Tiền ăn</h4>
+                                    <h4 class="gia">400000</h4>
+                                </div>
+                                <div class="ndg">
+                                    <h4 class="dmuc">Tiền ăn</h4>
+                                    <h4 class="gia">400000</h4>
+                                </div>
+                                <di class="ndg">
+                                    <h4 class="dmuc">Tiền ăn</h4>
+                                    <h4 class="gia">400000</h4>
+                                </di>
+                                <div class="ndg">
+                                    <h4 class="dmuc">Tiền ăn</h4>
+                                    <h4 class="gia">400000</h4>
+                                </div>
+                                <div class="ndg">
+                                    <h4 class="dmuc">Tiền ăn</h4>
+                                    <h4 class="gia">400000</h4>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="tong">
+                            <div class="tde">
+                                <h3>Tổng</h3>
+                                <h3 class="gtri">0đ</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footet">
+
+            </div>
+
+            <!-- modal -->
+            <form action="">
+                <div class="modal js-show_register">
+                        <div class="modal__body">
+                             <div class="auth-form js-auth-form">  
+                                <div class="auth-form__container">
+                                    <div class="auth-form__header">
+                                        <h3 class="auth-form__heading">Đăng ký</h3>
+                                        <span class="auth-form__switch-btn js-login">Đăng nhập</span>
+                                    </div>
+        
+                                    <div class="auth-form__form">
+                                        <div class="auth-form__group">
+                                            <input type="text" class="auth-form__input" required>
+                                            <div class="form-label">Email của bạn</div>
+                                        </div>
+                                        <div class="auth-form__group">
+                                            <input type="password" class="auth-form__input" required>
+                                            <div class="form-label">Mật khẩu</div>
+                                        </div>
+                                        <div class="auth-form__group">
+                                            <input type="password" class="auth-form__input" required>
+                                            <div class="form-label">Nhập lại mật khẩu</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="auth-form__aside">
+                                        <p class="auth-form__policy-text">
+                                            Bằng việc đăng ký, bạn đã đồng ý với chúng tôi về
+                                            <a href="#" class="auth-form__text-link">Điều khoản dịch vụ</a> & 
+                                            <a href="#" class="auth-form__text-link">Chính sách bảo mật</a>
+                                        </p>
+                                    </div>
+                                    <div class="auth-form__controls">
+                                        <button class="btn btn--normal auth-form__controls--back js-close">TRỞ LẠI</button>
+                                        <button class="btn btn--normal btn--primary">ĐĂNG KÝ</button>
+                                    </div>
+                                </div>
+        
+                                <div class="auth-form__socials">
+                                    <a href="#" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                                        <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                                        <span class="auth-form__socials-text">Kết nối Facebook</span>
+                                    </a>
+                                    <a href="#" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                                        <i class="auth-form__socials-icon fab fa-google"></i>
+                                        <span class="auth-form__socials-text">Kết nối Google</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </form>
+            
+            <form action="">
+                <div class="modal js-show_login">
+                    <div class="modal__body">
+                         <div class="auth-form js-auth-form">  
+                            <div class="auth-form__container">
+                                <div class="auth-form__header">
+                                    <h3 class="auth-form__heading ">Đăng nhập</h3>
+                                    <span class="auth-form__switch-btn js-register">Đăng ký</span>
+                                </div>
+        
+                                <div class="auth-form__form">
+                                    <div class="auth-form__group">
+                                        <input type="text" class="auth-form__input" equired>
+                                        <div class="form-label">Tên đăng nhập</div>
+                                    </div>
+                                    <div class="auth-form__group">
+                                        <input type="password" class="auth-form__input" required>
+                                        <div class="form-label">Mật khẩu</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="auth-form__aside">
+                                    <a class="auth-form__policy-text">
+                                        Quên mật khẩu
+                                    </a>
+                                </div>
+                                <div class="auth-form__controls">
+                                    <button class="btn btn--normal auth-form__controls--back js-login_close">TRỞ LẠI</button>
+                                    <button class="btn btn--normal btn--primary">ĐĂNG NHẬP</button>
+                                </div>
+                            </div>
+        
+                            <div class="auth-form__socials">
+                                <a href="#" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                                    <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                                    <span class="auth-form__socials-text">Kết nối Facebook</span>
+                                </a>
+                                <a href="#" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                                    <i class="auth-form__socials-icon fab fa-google"></i>
+                                    <span class="auth-form__socials-text">Kết nối Google</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="modal js-show_info ">
+                    <div class="modal__body">
+                            <div class="auth-form js-auth-form auth-form-info ">  
+                                <div class="header-info">
+                                    <h1 class="tilte-info">THÀNH VIÊN NHÓM</h1>
+                                    <i class="fas fa-window-close js-info-close"></i>
+                                </div>
+                                <p>
+                                    1.
+                                    <a target="_blank" href="#" >Nguyễn Thị Thu Hà</a>
+                                </p>
+                                <p>
+                                    2.
+                                    <a target="_blank" href="#" >Trần Minh Đức</a>
+                                </p>
+                                <p>
+                                    3.
+                                    <a target="_blank" href="#" >Nguyễn Phương Đại</a>
+                                </p>
+                                <p>
+                                    4.
+                                    <a target="_blank" href="#" >Nguyễn Thành Nam</a>
+                                </p>
+                                <p>
+                                    5.
+                                    <a target="_blank" href="https://ximvhs.github.io/frofile/">Vũ Hồng Sơn</a>
+                                </p>
+                            </div>
+                    </div>
+            </div>
+        </div>
+        
+
+        <!--  -->
+        <script src="main.js"></script>
+        <script src="https://kit.fontawesome.com/22b1ad7ec4.js" crossorigin="anonymous"></script>
+    </body>
+</html>
+
